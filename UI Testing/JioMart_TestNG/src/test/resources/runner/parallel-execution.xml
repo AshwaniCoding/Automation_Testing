@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM >
+
+<suite name="Jio Mart" parallel="tests" thread-count="2">
+
+    <test name="AddToCartTest">
+        <classes>
+            <class name="com.automation.tests.AddToCartTest"/>
+        </classes>
+    </test>
+
+    <test name="SearchItemTest">
+        <classes>
+            <class name="com.automation.tests.SearchItemTest"/>
+        </classes>
+    </test>
+
+</suite>

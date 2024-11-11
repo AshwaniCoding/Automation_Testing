@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("108aa650-3a7d-4964-9100-de60ec7dc89c",{name:"Ashu"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>features.GetPost</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-11-10 06:46:19 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Verify user can get post</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/GetPost.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get post</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Verify user can get post</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>759</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url host</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/api/posts/4&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">755</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">18:46:19.041 request:
+1 &gt; GET https://freefakeapi.io/api/posts/4
+1 &gt; Accept: application/json
+1 &gt; Host: freefakeapi.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:46:19.791 response time in milliseconds: 748
+1 &lt; 429
+1 &lt; Date: Sun, 10 Nov 2024 13:16:19 GMT
+1 &lt; Content-Type: text/html
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: o2switch-PowerBoost-v3
+1 &lt; Tiger-Protect-Security: https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect
+1 &lt; Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:01 GMT
+1 &lt; Access-Control-Allow-Origin: *
+&lt;!--Debug [[Security_Rule = &quot;&quot;; More_info = &quot;&quot;; HTTP_Code = &quot;429&quot;&quot;; Request_ID = &quot;b127c755d3175824697e6c838ecdb0d5&quot;; Support = &quot;support@o2switch.fr&quot;; Link = &quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot;]] EndOfDebug--&gt;
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge,chrome=1&quot; /&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot; /&gt;
+  &lt;meta name=&quot;retry-after&quot; content=&quot;240&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css&quot; integrity=&quot;sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot; /&gt;
+  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js&quot; integrity=&quot;sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js&quot; integrity=&quot;sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+  &lt;link id=&quot;favicon&quot; rel=&quot;shortcut icon&quot; type=&quot;image/svg+xml&quot; href=&quot;https://o2swit.ch/assets/favicon.svg&quot;/&gt;
+  &lt;link href=&quot;https://o2swit.ch/assets/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+  &lt;title&gt;HTTP 429&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;20&quot;&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;
+      &lt;div class=&quot;o2s-browser-check&quot;&gt;
+        &lt;div id=&quot;o2s-content&quot;&gt;
+          &lt;h1&gt;
+            
+              &lt;i class=&quot;fas fa-hand-paper&quot;&gt;&lt;/i&gt;
+            
+            HTTP 429&lt;br/&gt;
+            &lt;small data-i18n-key=&quot;title&quot;&gt;
+              
+                Ralentissez
+              
+            &lt;/small&gt;
+          &lt;/h1&gt;
+
+          &lt;p style=&quot;margin-top:2em;&quot; data-i18n-key=&quot;lead&quot;&gt;
+            
+              Cette requête a été bloquée par une sécurité activée sur l&#39;hébergement, suite à de trop nombreuses
+              tentatives d&#39;accès détecté (Rate-limit). &lt;br/&gt;
+              Si vous êtes le webmaster de ce site, vous pouvez désactiver cette sécurité depuis votre compte cPanel.
+            
+          &lt;/p&gt;
+
+          
+
+          
+            &lt;p style=&quot;margin-top:1em;&quot;&gt; 
+              &lt;span style=&quot;text-decoration:  none;&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+              &lt;a href=&quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot; target=&quot;_blank&quot;&gt;
+                &lt;span data-i18n-key=&quot;link&quot;&gt;
+                  Comment gérer cette sécurité avec TigerProtect dans cPanel ?
+                &lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/p&gt;
+          
+
+
+          
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      
+      &lt;div&gt;
+        &lt;img id=&quot;img&quot; width=&quot;250&quot; src=&quot;https://o2swit.ch/assets/tiger.svg&quot; /&gt;
+        &lt;br/&gt;&lt;br/&gt;
+        &lt;small&gt;
+          &lt;a href=&quot;https://www.o2switch.fr&quot; target=&quot;_blank&quot;&gt;support@o2switch.fr&lt;/a&gt;
+          -
+          &lt;a href=&quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot; target=&quot;_blank&quot;&gt;Tiger Protect&lt;/a&gt; &lt;br/&gt;
+          &lt;strong&gt;Request ID &lt;/strong&gt;: 169f8d3c46b30b2c3999e262d8b66ca9
+        &lt;/small&gt;
+        &lt;br&gt;
+      &lt;/div&gt;
+
+      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function() {
+      const supportedLocales = [&quot;en&quot;, &quot;fr&quot;];
+      const translations = {
+          &quot;en&quot;: {
+              &quot;title&quot;: `
+                  
+                    Slow down
+                  
+              `,
+              &quot;lead&quot;: `
+                
+                  This request was blocked by a security enabled on the hosting account, following too many
+                  access attempts detected (Rate-limited).&lt;br/&gt;
+                  If you are the webmaster of this site, you can disable this security from your cPanel account.
+                
+              `,
+              &quot;link&quot;: &quot;How to manage this security with the Tiger Protect Tool on cPanel ?&quot;, 
+              &quot;rule&quot; : &quot;Name of the security rule triggered&quot;
+          },
+          &quot;fr&quot;: {
+              &quot;title&quot;: `
+                
+                  Ralentissez
+                              
+              `,
+              &quot;lead&quot;: `
+                  
+                    Cette requête a été bloquée par une sécurité activée sur l&#39;hébergement, suite à de trop nombreuses
+                    tentatives d&#39;accès détecté (Rate-limit). &lt;br/&gt;
+                    Si vous êtes le webmaster de ce site, vous pouvez désactiver cette sécurité depuis votre compte cPanel.
+                  
+              `,
+              &quot;link&quot;: &quot;Comment gérer cette sécurité avec TigerProtect dans cPanel ?&quot;, 
+              &quot;rule&quot; : &quot;Nom de la règle de sécurité déclenchée&quot;
+          },
+      };
+      function browserLocales(languageCodeOnly = false) {
+          return navigator.languages.map((locale) =&gt;
+              languageCodeOnly ? locale.split(&quot;-&quot;)[0] : locale,
+          );
+      }
+      function isSupported(locale) {
+          return supportedLocales.indexOf(locale) &gt; -1;
+      }
+      function supportedOrDefault(locales) {
+          return locales.find(isSupported) || &#39;en&#39;;
+      }
+      const locale = supportedOrDefault(browserLocales(true));
+
+      document.querySelectorAll(&quot;[data-i18n-key]&quot;).forEach(function(element) {
+              const key = element.getAttribute(&quot;data-i18n-key&quot;);
+              const translation = translations[locale][key];
+              element.innerHTML = translation;
+          }
+      );
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--Debug [[Security_Rule = &quot;&quot;; More_info = &quot;&quot;; HTTP_Code = &quot;429&quot;&quot;; Request_ID = &quot;18104c7272e70e58bcc250dca36c4de0&quot;; Support = &quot;support@o2switch.fr&quot;; Link = &quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot;]] EndOfDebug--&gt;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">18:46:19.795 classpath:features/GetPost.feature:8
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 748, url: https://freefakeapi.io/api/posts/4, response: 
+&lt;!--Debug [[Security_Rule = &quot;&quot;; More_info = &quot;&quot;; HTTP_Code = &quot;429&quot;&quot;; Request_ID = &quot;b127c755d3175824697e6c838ecdb0d5&quot;; Support = &quot;support@o2switch.fr&quot;; Link = &quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot;]] EndOfDebug--&gt;
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge,chrome=1&quot; /&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot; /&gt;
+  &lt;meta name=&quot;retry-after&quot; content=&quot;240&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css&quot; integrity=&quot;sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot; /&gt;
+  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js&quot; integrity=&quot;sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js&quot; integrity=&quot;sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+  &lt;link id=&quot;favicon&quot; rel=&quot;shortcut icon&quot; type=&quot;image/svg+xml&quot; href=&quot;https://o2swit.ch/assets/favicon.svg&quot;/&gt;
+  &lt;link href=&quot;https://o2swit.ch/assets/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+  &lt;title&gt;HTTP 429&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;20&quot;&gt;
+  &lt;tr&gt;
+    &lt;td align=&quot;center&quot; valign=&quot;middle&quot;&gt;
+      &lt;div class=&quot;o2s-browser-check&quot;&gt;
+        &lt;div id=&quot;o2s-content&quot;&gt;
+          &lt;h1&gt;
+            
+              &lt;i class=&quot;fas fa-hand-paper&quot;&gt;&lt;/i&gt;
+            
+            HTTP 429&lt;br/&gt;
+            &lt;small data-i18n-key=&quot;title&quot;&gt;
+              
+                Ralentissez
+              
+            &lt;/small&gt;
+          &lt;/h1&gt;
+
+          &lt;p style=&quot;margin-top:2em;&quot; data-i18n-key=&quot;lead&quot;&gt;
+            
+              Cette requête a été bloquée par une sécurité activée sur l&#39;hébergement, suite à de trop nombreuses
+              tentatives d&#39;accès détecté (Rate-limit). &lt;br/&gt;
+              Si vous êtes le webmaster de ce site, vous pouvez désactiver cette sécurité depuis votre compte cPanel.
+            
+          &lt;/p&gt;
+
+          
+
+          
+            &lt;p style=&quot;margin-top:1em;&quot;&gt; 
+              &lt;span style=&quot;text-decoration:  none;&quot;&gt;&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+              &lt;a href=&quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot; target=&quot;_blank&quot;&gt;
+                &lt;span data-i18n-key=&quot;link&quot;&gt;
+                  Comment gérer cette sécurité avec TigerProtect dans cPanel ?
+                &lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/p&gt;
+          
+
+
+          
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      
+      &lt;div&gt;
+        &lt;img id=&quot;img&quot; width=&quot;250&quot; src=&quot;https://o2swit.ch/assets/tiger.svg&quot; /&gt;
+        &lt;br/&gt;&lt;br/&gt;
+        &lt;small&gt;
+          &lt;a href=&quot;https://www.o2switch.fr&quot; target=&quot;_blank&quot;&gt;support@o2switch.fr&lt;/a&gt;
+          -
+          &lt;a href=&quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot; target=&quot;_blank&quot;&gt;Tiger Protect&lt;/a&gt; &lt;br/&gt;
+          &lt;strong&gt;Request ID &lt;/strong&gt;: 169f8d3c46b30b2c3999e262d8b66ca9
+        &lt;/small&gt;
+        &lt;br&gt;
+      &lt;/div&gt;
+
+      
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(document).ready(function() {
+      const supportedLocales = [&quot;en&quot;, &quot;fr&quot;];
+      const translations = {
+          &quot;en&quot;: {
+              &quot;title&quot;: `
+                  
+                    Slow down
+                  
+              `,
+              &quot;lead&quot;: `
+                
+                  This request was blocked by a security enabled on the hosting account, following too many
+                  access attempts detected (Rate-limited).&lt;br/&gt;
+                  If you are the webmaster of this site, you can disable this security from your cPanel account.
+                
+              `,
+              &quot;link&quot;: &quot;How to manage this security with the Tiger Protect Tool on cPanel ?&quot;, 
+              &quot;rule&quot; : &quot;Name of the security rule triggered&quot;
+          },
+          &quot;fr&quot;: {
+              &quot;title&quot;: `
+                
+                  Ralentissez
+                              
+              `,
+              &quot;lead&quot;: `
+                  
+                    Cette requête a été bloquée par une sécurité activée sur l&#39;hébergement, suite à de trop nombreuses
+                    tentatives d&#39;accès détecté (Rate-limit). &lt;br/&gt;
+                    Si vous êtes le webmaster de ce site, vous pouvez désactiver cette sécurité depuis votre compte cPanel.
+                  
+              `,
+              &quot;link&quot;: &quot;Comment gérer cette sécurité avec TigerProtect dans cPanel ?&quot;, 
+              &quot;rule&quot; : &quot;Nom de la règle de sécurité déclenchée&quot;
+          },
+      };
+      function browserLocales(languageCodeOnly = false) {
+          return navigator.languages.map((locale) =&gt;
+              languageCodeOnly ? locale.split(&quot;-&quot;)[0] : locale,
+          );
+      }
+      function isSupported(locale) {
+          return supportedLocales.indexOf(locale) &gt; -1;
+      }
+      function supportedOrDefault(locales) {
+          return locales.find(isSupported) || &#39;en&#39;;
+      }
+      const locale = supportedOrDefault(browserLocales(true));
+
+      document.querySelectorAll(&quot;[data-i18n-key]&quot;).forEach(function(element) {
+              const key = element.getAttribute(&quot;data-i18n-key&quot;);
+              const translation = translations[locale][key];
+              element.innerHTML = translation;
+          }
+      );
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!--Debug [[Security_Rule = &quot;&quot;; More_info = &quot;&quot;; HTTP_Code = &quot;429&quot;&quot;; Request_ID = &quot;18104c7272e70e58bcc250dca36c4de0&quot;; Support = &quot;support@o2switch.fr&quot;; Link = &quot;https://faq.o2switch.fr/hebergement-mutualise/tutoriels-cpanel/tiger-protect&quot;]] EndOfDebug--&gt;
+
+classpath:features/GetPost.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref skipped">9</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
